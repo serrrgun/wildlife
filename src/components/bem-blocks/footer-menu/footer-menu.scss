@@ -1,0 +1,42 @@
+.footer-menu {
+    display: flex;
+    align-items: center;
+    width: 480px;
+    margin-right: -24px;
+
+    &__item {
+        margin-right: 85px;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 639px) {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 23px;
+        color: $white;
+        line-height: 60px;
+        transition: .3s ease;
+
+        &:hover {
+            color: $orange-light;
+        }
+    
+        &:focus {
+            color: $orange-dark;
+        }
+    }
+
+    @media screen and (max-width: 1359px) {
+        margin: 40px 0;
+        width: auto;
+    }
+
+    @media screen and (max-width: 639px) {
+        flex-direction: column;
+    }
+}

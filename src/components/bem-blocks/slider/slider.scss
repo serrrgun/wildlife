@@ -1,0 +1,52 @@
+.slider {
+    position: relative;
+
+    &__item {
+        display: inline-block;
+        width: 300px;
+    }
+
+    &__button {
+        position: absolute;
+        width: 29px;
+        height: 39px;
+        cursor: pointer;
+        transform: translateY(-50%);
+
+        &--next {
+            top: 50%;
+            right: 0;
+        }
+
+        &--prev {
+            top: 50%;
+            left: 0;
+        }
+
+        svg {
+            width: 29px;
+            height: 39px;
+            fill: $grey;
+            transition: .5s ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+            svg {
+                fill: $orange;
+            }
+        }
+
+        @media screen and (max-width: 1280px) {
+            display: none;
+        }
+    }
+
+    & .swiper-container {
+        width: 1020px;
+
+        @media screen and (max-width: 1365px) {
+            width: 100%;
+        }
+    }
+}

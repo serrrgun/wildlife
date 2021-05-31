@@ -1,0 +1,28 @@
+.social {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 27px;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        svg {
+            fill: $white;
+            transition: .5s ease-in-out;
+        }
+
+        &:hover {
+            svg {
+                fill: $orange-light;;
+            }
+        }
+        &:focus {
+            svg {
+                fill: $orange-dark;
+            }
+        } 
+    }
+}

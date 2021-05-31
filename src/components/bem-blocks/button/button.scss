@@ -1,0 +1,19 @@
+.button {
+    padding: 16px 42px 17px;
+    font-family: 'Roboto';
+    font-size: 23px;
+    line-height: 27px;
+    color: $white;
+    text-align: center;
+    background-color: $orange;
+    border-radius: 5px;
+    transition: .5s ease;
+
+    &:hover {
+        background-color: $orange-light;
+    }
+
+    &:focus {
+        background-color: $orange-dark;
+    }
+}

@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 150.7px;
+    padding-bottom: 150.7px;
+    background-image: url(../img/leaves-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 1359px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    } 
+}
